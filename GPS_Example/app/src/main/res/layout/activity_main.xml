@@ -120,6 +120,30 @@
                 android:text="None"
                 android:textColor="@android:color/black"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="GPS Accuracy : "
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/textGPSAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="None"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
     </LinearLayout>
 
 
@@ -198,18 +222,43 @@
         android:layout_marginTop="10dp"
         android:background="@android:color/darker_gray"/>
 
-    <Button
-        android:id="@+id/btnSaveGPS"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:text="SAVE"/>
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSaveGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SAVE"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnGPSClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Clear"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mail"/>
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="5px"
-
         android:background="@android:color/darker_gray"/>
 
     <ScrollView
@@ -223,7 +272,7 @@
                 android:id="@+id/table_main"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:stretchColumns="*">
+                android:stretchColumns="1,2">
             </TableLayout>
         </HorizontalScrollView>
     </ScrollView>
