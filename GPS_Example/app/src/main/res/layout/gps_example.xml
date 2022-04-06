@@ -178,11 +178,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Lat 1 : "
+                android:text="Bearing : "
                 android:textColor="@android:color/black"/>
 
             <TextView
-                android:id="@+id/textLat1"
+                android:id="@+id/textBearing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -202,11 +202,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Lon 1 : "
+                android:text="Bearing Acc : "
                 android:textColor="@android:color/black"/>
 
             <TextView
-                android:id="@+id/textLon1"
+                android:id="@+id/textBearingAcc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

@@ -1,36 +1,29 @@
-package com.example.myapplication;
+package com.example.myapplication.Examples;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
 import com.example.myapplication.models.GPS_MODEL;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity
+public class GPSExample extends AppCompatActivity
         implements LocationListener {
 
     private double latitude;
@@ -38,10 +31,9 @@ public class MainActivity extends AppCompatActivity
     private double accuracy = 100;
     List<GPS_MODEL> model_list;
 
-    TextView textGPSProvider, textCurLat, textCurLon, textLat1, textLon1, textGPSAcc;
+    TextView textGPSProvider, textCurLat, textCurLon, textBearing, textBearingAcc, textGPSAcc;
     Button btnGPS1Test, btnSaveGPS, btnClear, btnMail;
     TableLayout layout;
-
 
     protected LocationManager locationManager;
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 0;
@@ -50,15 +42,15 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gps_example);
 
         layout = (TableLayout)findViewById(R.id.table_main);
 
         // TextView
         textCurLat = findViewById(R.id.textCurLat);
         textCurLon = findViewById(R.id.textCurLon);
-        textLat1 = findViewById(R.id.textLat1);
-        textLon1 = findViewById(R.id.textLon1);
+        textBearing = findViewById(R.id.textBearing);
+        textBearingAcc = findViewById(R.id.textBearingAcc);
         textGPSProvider = findViewById(R.id.textGPSProvider);
         textGPSAcc = findViewById(R.id.textGPSAcc);
 
@@ -129,6 +121,7 @@ public class MainActivity extends AppCompatActivity
         textCurLat.setText(Double.toString(latitude) + "_init");
         textCurLon.setText(Double.toString(longitude) + "_init");
         textGPSProvider.setText(bestLocation.getProvider());
+        textBearing.setText(Float.toString(bestLocation.getBearing()));
         model_list = new ArrayList();
     }
 
