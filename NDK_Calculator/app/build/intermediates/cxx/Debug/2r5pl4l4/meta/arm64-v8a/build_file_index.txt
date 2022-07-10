@@ -1,0 +1,1 @@
+C:\Users\wodyd\Desktop\github\android-project\kotlinandroid\app\src\main\cpp\CMakeLists.txt

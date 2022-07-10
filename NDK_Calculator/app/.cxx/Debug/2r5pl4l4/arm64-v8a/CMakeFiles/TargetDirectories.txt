@@ -1,0 +1,3 @@
+C:/Users/wodyd/Desktop/github/android-project/kotlinandroid/app/.cxx/Debug/2r5pl4l4/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/wodyd/Desktop/github/android-project/kotlinandroid/app/.cxx/Debug/2r5pl4l4/arm64-v8a/CMakeFiles/kotlin_android.dir
+C:/Users/wodyd/Desktop/github/android-project/kotlinandroid/app/.cxx/Debug/2r5pl4l4/arm64-v8a/CMakeFiles/rebuild_cache.dir
