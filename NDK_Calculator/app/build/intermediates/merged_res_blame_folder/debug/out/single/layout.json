@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\wodyd\\.gradle\\daemon\\7.3.3\\com.example.kotlin_android.app-mergeDebugResources-25:\\layout\\activity_ndk_calculator.xml",
+        "source": "C:\\Users\\wodyd\\.gradle\\daemon\\7.3.3\\com.example.kotlin_android.app-main-28:\\layout\\activity_ndk_calculator.xml"
+    },
+    {
+        "merged": "C:\\Users\\wodyd\\.gradle\\daemon\\7.3.3\\com.example.kotlin_android.app-mergeDebugResources-25:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\wodyd\\.gradle\\daemon\\7.3.3\\com.example.kotlin_android.app-main-28:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.kotlin_android.app-mergeDebugResources-25:/layout/activity_ndk_calculator.xml",
+        "source": "com.example.kotlin_android.app-main-28:/layout/activity_ndk_calculator.xml"
+    }
+]

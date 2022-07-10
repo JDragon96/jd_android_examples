@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\wodyd\Desktop\github\android-project\kotlinandroid\app\.cxx\Debug\2r5pl4l4\arm64-v8a'
+ninja: no work to do.
